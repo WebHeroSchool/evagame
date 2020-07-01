@@ -86,26 +86,25 @@ body {
 }
 
 .game_treecard {
-	padding: 340px 370px;
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: grid;
+  padding: 370px 360px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .game_sixcard {
-	padding: 157px 370px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: grid;
+  padding: 160px 360px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 364px;
 }
 
 .game_tencard {
 	padding: 157px 126px;
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row-gap: 364px;
 }
 
 .card_box {
