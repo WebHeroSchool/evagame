@@ -1,0 +1,138 @@
+body {
+	width: 1440px;
+	height: 1024px;
+	margin: 0;
+	background: url(images/background.png);
+}
+
+.wrap {
+	font-family: Roboto;
+	color: #fff;
+	padding: 129px 69px 104px 103px;
+}
+
+.title {
+	font-size: 57px;
+}
+
+.subtitle {
+	font-size: 19px;
+	line-height: 35px;
+	margin-bottom: 60px;
+}
+
+.label {
+	position: relative;
+}
+
+.text {
+  display: block;
+	font-size: 50px;
+  padding-left: 41px;
+	margin-bottom: 24px;
+}
+
+.text:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.radio{
+  display: none;
+}
+
+.fake::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  width: 30px;
+  height: 30px;
+  background: url(images/rectangle.png)left no-repeat;
+  opacity: 0;
+  transition: .2s;
+}
+
+.radio:checked + .fake::before {
+  opacity: 1;
+}
+
+.columns {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #D62B2E;
+	font-size: 32px;
+	text-align: center;
+	padding: 28px 85px;
+	border-radius: 10px;
+}
+
+.btn:hover {
+	box-shadow: 3px 3px 8px #000;
+	cursor: pointer;
+}
+
+.cards_main {
+	padding-left: 140px;
+	background: url('images/card1.png')left no-repeat;
+}
+
+.cards_main:hover {
+	background: url('images/card.png')left no-repeat;
+}
+
+.game_treecard {
+  display: grid;
+  padding: 370px 360px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game_sixcard {
+  display: grid;
+  padding: 160px 360px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 364px;
+}
+
+.game_tencard {
+	padding: 157px 126px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row-gap: 364px;
+}
+
+.card_box {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: inline;
+}
+ 
+.shirt:hover {
+	cursor: pointer;
+	transform: translateY(-20px);
+}
+
+.shirt,
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+.face {
+  transform: rotateY(180deg);
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+
