@@ -32,7 +32,7 @@ const addCardBox = () => {
       menuField.style.display = '';
       isCardClick = false;
     } else {
-    	cardOnClick();
+      cardOnClick();
       isCardClick = true;
       }
   });
@@ -47,6 +47,8 @@ const startGame = () => {
       break;
     }
   }
+  const cards =  document.querySelectorAll('.card_box')
+  cards.forEach(item => item.remove())
   menuField.style.display = 'none';
   gameField.style.display = '';
   if (selectedLevel === 'easy') {
